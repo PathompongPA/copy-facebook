@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div id="navbar" class="navbar">
+      <ul class="left">
+        <li
+          class="title"
+        >
+          <span class="material-icons">logo_dev</span>
+          <div id="holder-logo" class="holder close">logo</div>
+        </li>
+
+        <li
+          class="title"
+          onmouseenter="toggleHolder(`holder-search`)"
+          onmouseleave="toggleHolder(`holder-search`)"
+        >
+          search
+          <div id="holder-search" class="holder close">search</div>
+        </li>
+      </ul>
+      <ul class="center">
+        <li
+          id="title-home "
+          class="title border-bottom"
+          onmouseenter="toggleHolder(`holder-op1`)"
+          onmouseleave="toggleHolder(`holder-op1`)"
+          onclick="toggleButtonBorder(`title-home`)"
+        >
+          <span class="material-icons">home</span>
+          <div id="holder-home" class="holder close">home</div>
+        </li>
+        <li
+          id="title-market "
+          class="title border-bottom"
+          onmouseenter="toggleHolder(`holder-op2`)"
+          onmouseleave="toggleHolder(`holder-op2`)"
+          onclick="toggleButtonBorder(`title-market`)"
+        >
+          <span class="material-icons">storefront</span>
+          <div id="holder-market" class="holder close">market</div>
+        </li>
+        <li
+          id="title-groups "
+          class="title border-bottom"
+          onmouseenter="toggleHolder(`holder-op3`)"
+          onmouseleave="toggleHolder(`holder-op3`)"
+          onclick="toggleButtonBorder(`title-groups`)"
+        >
+          <span class="material-icons">groups</span>
+          <div id="holder-groups" class="holder close">groups</div>
+        </li>
+      </ul>
+      <ul class="right">
+        <li
+          id="title-msg"
+          class="title"
+          onmouseenter="toggleHolder(`holder-msg`)"
+          onmouseleave="toggleHolder(`holder-msg`)"
+          onclick="toggleActive(`title-msg`)"
+        >
+          <span class="material-icons">chat</span>
+          <div id="holder-msg" class="holder close">msg</div>
+        </li>
+        <li
+          id="title-notification"
+          class="title"
+          onmouseenter="toggleHolder(`holder-notification`)"
+          onmouseleave="toggleHolder(`holder-notification`)"
+          onclick="toggleActive(`title-notification`)"
+        >
+          <span class="material-icons">notifications</span>
+          <div id="holder-notification" class="holder close">notification</div>
+        </li>
+        <li
+          id="title-profile"
+          class="title"
+          onmouseenter="toggleHolder(`holder-profile`)"
+          onmouseleave="toggleHolder(`holder-profile`)"
+          onclick="toggleActive(`title-profile`)"
+        >
+          <span class="material-icons">person</span>
+          <div id="holder-profile" class="holder close">profile</div>
+        </li>
+        </li>
+      </ul>
+    </div>
+    <div id="window" class="window  close"
+          onmouseenter="toggleScroll(`window`)"
+          onmouseleave="toggleScroll(`window`)"
+      >window </div>
+    <div id="side-menu" class="sidebar side-menu"
+          onmouseenter="toggleScroll(`side-menu`)"
+          onmouseleave="toggleScroll(`side-menu`)"
+      >
+      <ul>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+        <li class="list-sidebar">menu</li>
+      </ul>
+
+    </div>
+    <div id="status-bar" class="sidebar status-bar"
+          onmouseenter="toggleScroll(`status-bar`)"
+          onmouseleave="toggleScroll(`status-bar`)"
+      >
+      <ul>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+        <li class="list-contact">content</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="main">main content</div>
+    </div>
+  </body>
+  <script>
+    function toggleHolder(id) {
+      setTimeout(()=>{
+        document.getElementById(id).classList.toggle("close");
+      },100)
+    }
+    function toggleScroll(id) {
+      setTimeout(()=>{
+        document.getElementById(id).classList.toggle("scroll");
+      },100)
+    }
+    function toggleActive(id){
+      if(document.querySelectorAll(".active").length !=0 ){
+        if(document.querySelectorAll(".active")[0].id !==id){
+          document.querySelectorAll(".active")[0].classList.toggle("active")
+          document.getElementById("window").classList.toggle("close");
+        }
+      }
+        document.getElementById(id).classList.toggle("active");
+        document.getElementById("window").classList.toggle("close");
+    }
+    function toggleButtonBorder(id){
+      if(document.querySelectorAll(".border-bottom").length !=0 ){
+          document.querySelectorAll(".border-bottom")[0].classList.toggle("border-bottom")
+      }
+        document.getElementById(id).classList.toggle("border-bottom");
+
+    }
+  </script>
+</html>
